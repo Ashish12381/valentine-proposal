@@ -44,19 +44,26 @@ will you be mine this Valentine’s? 💘`;
   }, []);
 
   const moveButton = (e) => {
-    e.preventDefault();
-    e.stopPropagation();
+  e.preventDefault();
+  e.stopPropagation();
 
-    setIsMoving(true);
+  setIsMoving(true);
 
-    const randomTop = Math.random() * 80;
-    const randomLeft = Math.random() * 80;
+  const card = e.currentTarget.closest(".card");
+  const cardRect = card.getBoundingClientRect();
 
-    setPosition({
-      top: `${randomTop}%`,
-      left: `${randomLeft}%`,
-    });
-  };
+  const maxLeft = cardRect.width - cardRect.width * 0.2;
+  const maxTop = cardRect.height - cardRect.height * 0.2;
+
+  const randomLeft = Math.random() * (maxLeft - 30) + 30;
+  const randomTop = Math.random() * (maxTop - 30) + 30;
+
+  setPosition({
+    top: `${randomTop}px`,
+    left: `${randomLeft}px`,
+  });
+};
+
 
   return (
     <div className="proposal">
