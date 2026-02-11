@@ -59,14 +59,24 @@ export default function Celebration() {
           every single day. 💞
         </motion.p>
 
-        <motion.div
-          className="love-glow"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 2.2, duration: 1 }}
-        >
-          “After all these years, you’re still my favourite place 💞”
-        </motion.div>
+       <motion.div
+  className="love-line"
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ delay: 2.2, duration: 1 }}
+>
+  After all these years, you’re still my favourite place 💞
+</motion.div>
+
+<motion.div
+  className="valentine-line"
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ delay: 3.2, duration: 1 }}
+>
+  Happy Valentine’s Day, <br/>My Love ❤️
+</motion.div>
+
       </motion.div>
     </div>
   );

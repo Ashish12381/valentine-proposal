@@ -336,3 +336,28 @@ body::before {
     font-size: 36px;
   }
 }
+
+.love-line {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #ffeef3;
+  opacity: 0.95;
+}
+
+.valentine-line {
+  margin-top: 25px;
+  font-family: 'Great Vibes', cursive;
+  font-size: 34px;
+  color: #ffffff;
+  text-shadow: 0 0 15px rgba(255, 0, 120, 0.6);
+  animation: gentleGlow 2s infinite alternate;
+}
+
+@keyframes gentleGlow {
+  from {
+    text-shadow: 0 0 10px rgba(255, 0, 120, 0.4);
+  }
+  to {
+    text-shadow: 0 0 25px rgba(255, 0, 120, 0.9);
+  }
+}
